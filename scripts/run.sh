@@ -11,7 +11,7 @@ FS=10 ## This model adopts FPS=5, range recommended: 5-30 (smaller value -> larg
 
 seed=123
 name=tooncrafter_512_interp_seed${seed}
-CUDA_VISIBLE_DEVICES=0,1,3 python3 scripts/evaluation/inference.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 scripts/evaluation/inference.py \
 --seed ${seed} \
 --ckpt_path $ckpt \
 --config $config \
